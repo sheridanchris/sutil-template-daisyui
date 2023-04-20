@@ -1,4 +1,7 @@
 module.exports = {
-  content: ["./src/App/**/*.{fs, js, ts, html}"],
+  content: ["./src/App/**/*.{html, js}"],
+  theme: {
+    extend: {},
+  },
   plugins: [require("daisyui")],
 }

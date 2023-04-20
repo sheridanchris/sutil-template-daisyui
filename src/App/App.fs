@@ -3,7 +3,6 @@ module App
 open Sutil
 open Sutil.CoreElements
 open Sutil.DaisyUI
-open Fable.Core.JsInterop
 
 // For the best Tailwind experience, install the 'Tailwind CSS IntelliSense' extension.
 // See README.md for full details.
@@ -40,5 +39,4 @@ let view () =
     ]
   ]
 
-importSideEffects "./styles.css"
 Program.mount ("sutil-app", view ()) |> ignore

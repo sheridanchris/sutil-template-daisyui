@@ -3,11 +3,10 @@ node_modules
 [Bb]in/
 [Oo]bj/
 
+fable_modules/
 package-lock.json
 bundle.js
 *.fs.js
 .fake
 .ionide
-public/tailwind.css
-
-.fable-build/
+tailwind.css

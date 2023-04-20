@@ -2,15 +2,17 @@
   "private": true,
   "scripts": {
     "postinstall": "dotnet tool restore",
-    "start": "dotnet fable watch src/App -s -o src/App/.fable-build --run vite"
+    "prestart": "npm run tailwind",
+    "start": "dotnet fable watch src/App --run vite",
+    "tailwind": "npx tailwindcss -i ./src/App/styles.css -o ./src/App/tailwind.css"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
     "daisyui": "^2.51.5",
-    "postcss": "^8.4.23",
-    "tailwindcss": "^3.3.1"
+    "postcss": "^8.4.23"
   },
   "devDependencies": {
+    "tailwindcss": "^3.3.1",
     "vite": "^3.1.0"
   }
 }
