@@ -10,3 +10,4 @@ bundle.js
 .ionide
 public/tailwind.css
 
+.fable-build/

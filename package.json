@@ -1,21 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "start": "dotnet fable watch src/App --runWatch npm run pack",
-    "build": "dotnet fable       src/App --run npm run pack:prod",
-    "pack": "npm run tailwind && webpack serve",
-    "pack:prod": "npm run tailwind && webpack --mode production",
-    "tailwind": "cross-env NODE_ENV=production tailwindcss build -o public/tailwind.css"
+    "postinstall": "dotnet tool restore",
+    "start": "dotnet fable watch src/App -s -o src/App/.fable-build --run vite"
   },
   "dependencies": {
-    "webpack": "^5.11.0",
-    "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0"
+    "autoprefixer": "^10.4.14",
+    "daisyui": "^2.51.5",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "cross-env": "^7.0.3",
-    "postcss": "^8.2.10",
-    "tailwindcss": "^3.2.4"
+    "vite": "^3.1.0"
   }
 }
