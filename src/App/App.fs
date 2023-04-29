@@ -16,23 +16,16 @@ let view () =
   Html.div [
     disposeOnUnmount [ counter ]
 
-    Bind.el (
-      counter,
-      fun count ->
-        Html.p [
-          Attr.className "text-green-600"
-          Attr.text (string count)
-        ]
-    )
+    Bind.el (counter, Html.p)
 
     Daisy.Button.button [
-      Daisy.Button.small
+      Daisy.Button.extraSmall
       Daisy.Button.primary
       Attr.text "Increment"
       onClick (fun _ -> Store.modify increment counter) []
     ]
     Daisy.Button.button [
-      Daisy.Button.small
+      Daisy.Button.extraSmall
       Daisy.Button.primary
       Attr.text "Decrement"
       onClick (fun _ -> Store.modify decrement counter) []
