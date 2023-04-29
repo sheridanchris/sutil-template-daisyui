@@ -1,17 +1,13 @@
 ## Sutil Template for Tailwind
 
-The `Sutil Hello World` program, but using Tailwind, with:
-- CSS purging (using tailwindcss-cli)
-- IntelliSense (using Tailwind CSS Intellisense plugin)
-
 ### Quick Start
 
 ```shell
-git clone -s https://github.com/davedawkins/sutil-template-tailwind.git
-cd sutil-template-tailwind
+git clone https://github.com/sheridanchris/sutil-template-daisyui
+cd sutil-template-daisyui
 dotnet tool restore
 npm install
-npm run start
+npm start
 ```
 
 ### Adding Tailwind to an Existing Project
