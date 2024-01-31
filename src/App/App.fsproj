@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.fs" />
@@ -9,6 +9,5 @@
       <PackageReference Include="Sutil" Version="2.0.11" />
       <PackageReference Include="Sutil.DaisyUI" Version="0.0.3" />
       <PackageReference Include="Sutil.Router" Version="0.0.3" />
-      <PackageReference Update="FSharp.Core" Version="7.0.200" />
   </ItemGroup>
 </Project>
